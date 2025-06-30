@@ -58,10 +58,12 @@
   <div class="horoscope-container">
 
     <!-- Heading & Subtext -->
-    <h2 class="horoscope-heading">Daily Horoscopes</h2>
-    <p class="horoscope-subtext">
-      Daily horoscopes are like a guiding light in the vast universe of possibilities.
-    </p>
+    <div class="horoscope-label">KNOW YOUR HOROSCOPE</div>
+
+    <h2 class="horoscope-heading">
+          Daily horoscopes are like a guiding light<br>
+          in the vast universe of possibilities.
+    </h2>
 
     <!-- 12 Zodiac Image Cards -->
     <div class="horoscope-grid">
@@ -124,18 +126,27 @@
 <!-- Updated Horoscope -->
 <section class="horoscope-result">
   <div class="result-container">
-    <h2>Today's Horoscope</h2>
-    <p class="subtext" id="horoscope-description"></p>
 
+    <!-- Label -->
+    <div class="horoscope-label">TODAY’S HOROSCOPE</div>
+
+    <!-- Dynamic Subheading (filled by JS) -->
+    <h2 class="horoscope-heading" id="horoscope-description"></h2>
+
+    <!-- Horoscope Box -->
     <div class="result-box" id="horoscope-preview">
       Loading today’s prediction...
     </div>
 
+    <!-- Read More Button -->
     <button id="read-more-btn" style="display: none;">Read More</button>
 
+    <!-- Meta Info -->
     <p class="meta-text" id="horoscope-meta"></p>
+
   </div>
 </section>
+
 
 <!-- Modal -->
 <div id="horoscope-modal" class="modal">
