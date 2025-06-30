@@ -369,20 +369,16 @@ body {
 
 .result-box {
   height: 150px; /* Fixed height */
-  width: 100%;   /* Or set a fixed width if needed */
   overflow: hidden;
-  padding: 20px;
+  padding: 14px 25px;
   background: #fffaf0;
   border: 1px solid #ffc187;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(255, 170, 75, 0.2);
   box-sizing: border-box;
-  display: flex;
-  justify-content: center;    /* Horizontal center */
-  align-items: center;        /* Vertical center */
-  text-align: center;         /* Text center inside box */
+  text-align: center;       /* 👈 Horizontally center text */
   line-height: 1.6;
-  white-space: pre-wrap;      /* Preserve line breaks */
+  white-space: pre-wrap;    /* Preserve line breaks */
 }
 
 
