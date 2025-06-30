@@ -368,21 +368,22 @@ body {
 }
 
 .result-box {
-  max-height: 150px;
+  height: 150px; /* 👈 Force fixed height always */
   overflow: hidden;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px;
   background: #fffaf0;
   border: 1px solid #ffc187;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(255, 170, 75, 0.2);
   line-height: 1.6;
   box-sizing: border-box;
-  display: block;
-  white-space: pre-wrap; /* preserves line breaks */
+  white-space: pre-wrap;
+  display: flex;
+  align-items: center;        /* Vertically center */
+  justify-content: flex-start; /* Align text to top */
+  text-align: left;
 }
+
 
 
 
