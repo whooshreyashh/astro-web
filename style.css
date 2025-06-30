@@ -1,0 +1,507 @@
+/* === GLOBAL RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #FFF5E1;
+  color: #333;
+}
+
+/* === NAVBAR === */
+.navbar {
+  background-color: #ffffff;
+  padding: 20px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FF7A00;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #FF7A00;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #FF7A00;
+}
+
+/* === HERO SECTION === */
+.hero {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 550px;
+}
+
+.hero-text h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #FF7A00;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.btn {
+  background: #FF7A00;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 122, 0, 0.4);
+}
+
+.hero-image img {
+  width: 90%;
+  max-width: 500px;
+  animation: floatRotate 3s ease-in-out infinite, rotate 60s linear infinite;
+}
+
+/* Float up & down */
+@keyframes floatRotate {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Continuous clockwise rotation */
+@keyframes rotate {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+
+
+
+
+/* Star container */
+/* .star-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Tiny falling stars */
+.star {
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(45deg, #FFD194, #FFB347);
+  border-radius: 50%;
+  opacity: 1;
+  z-index: 1;
+  pointer-events: none;
+
+   /* Glowing long trail */
+  box-shadow:
+    0 0 8px #FFE8A3,
+    0 0 16px #FFB347,
+    -40px 40px 30px rgba(255, 165, 0, 0.4); /* longer tail */
+
+  animation-name: shoot;
+  animation-timing-function: linear;
+} */
+
+
+
+/* Position & delay stars uniquely
+.star:nth-child(1) { top: 0; right: 10%; animation-delay: 0s; }
+.star:nth-child(2) { top: -10%; right: 20%; animation-delay: 0.3s; }
+.star:nth-child(3) { top: -20%; right: 30%; animation-delay: 0.6s; }
+.star:nth-child(4) { top: -30%; right: 40%; animation-delay: 0.9s; }
+.star:nth-child(5) { top: -40%; right: 50%; animation-delay: 1.2s; }
+.star:nth-child(6) { top: -50%; right: 60%; animation-delay: 1.5s; }
+.star:nth-child(7) { top: -60%; right: 70%; animation-delay: 1.8s; }
+.star:nth-child(8) { top: -30%; right: 80%; animation-delay: 2.1s; }
+.star:nth-child(9) { top: -20%; right: 90%; animation-delay: 2.4s; }
+.star:nth-child(10) { top: -10%; right: 100%; animation-delay: 2.7s; } */
+
+/* Shooting + fading */
+/* @keyframes shoot {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-150vw, 150vh) scale(0.5);
+    opacity: 0;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+/* === SERVICES SECTION === */
+.services {
+  background-color: #F9F3E7;
+  padding: 80px 20px;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  color: #FF7A00;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(255, 122, 0, 0.2);
+}
+
+.card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+
+
+
+
+
+/* DAILY HOROSCOPE SECTION */
+.daily-horoscopes {
+  background-color: #FFF5E1;
+  padding: 80px 20px;
+}
+
+.horoscope-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.horoscope-heading {
+  font-size: 32px;
+  color: #FF7A00;
+  margin-bottom: 16px;
+}
+
+.horoscope-subtext {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 50px;
+  line-height: 1.6;
+}
+
+/* 6-column grid */
+.horoscope-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 50px 30px;
+  justify-content: center;
+}
+
+/* Image wrapper = clickable */
+.horoscope-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+/* Make image itself clickable and styled */
+.horoscope-card a {
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.horoscope-card a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 122, 0, 0.3);
+  border-radius: 16px;
+}
+
+.horoscope-card img {
+  width: 175px;
+  height: 216px;
+  object-fit: contain;
+  border: none;
+  display: block;
+}
+
+
+
+
+
+
+
+.horoscope-result {
+  background-color: #FFFFFF;
+  padding: 60px 20px 100px;
+  text-align: center;
+}
+
+.result-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.horoscope-result h2 {
+  font-size: 30px;
+  color: #FF7A00;
+  margin-bottom: 40px;
+}
+
+.horoscope-result .subtext {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.result-box {
+  background-color: #FFF5E1;
+  border-left: 6px solid #FF7A00;
+  padding: 30px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #333;
+  transition: all 0.3s ease;
+  min-height: 100px;
+}
+
+.meta-text {
+  margin-top: 15px;
+  color: #888;
+  font-size: 14px;
+  font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hide vertical scrollbar */
+body {
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  margin: 0;
+}
+
+html {
+  scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+
+
+
+/* === RESPONSIVE STYLES === */
+@media (max-width: 1024px) {
+  .container,
+  .hero-content,
+  .services-container,
+  .horoscope-container {
+    padding: 0 16px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: #ffffff;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero-text h2 {
+    font-size: 28px;
+  }
+
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .horoscope-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .horoscope-heading {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .horoscope-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-text h2,
+  .section-title,
+  .horoscope-heading {
+    font-size: 22px;
+  }
+
+  .btn {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  .horoscope-card img {
+    width: 130px;
+    height: auto;
+  }
+}
