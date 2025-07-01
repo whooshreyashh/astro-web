@@ -75,3 +75,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+
+
+// TEXTBOX ANIMATION
+const textBoxes = document.querySelectorAll('.text-box');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+textBoxes.forEach(box => observer.observe(box));
