@@ -571,34 +571,35 @@ body {
 /* === Responsive === */
 @media (max-width: 768px) {
   .timeline::before {
-    left: 20px;
+    left: 30px;
+    transform: none;
   }
 
   .timeline-block {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 0;
-  }
-
-  .timeline-block.right {
-    flex-direction: column;
+    position: relative;
+    padding-top: 60px; /* Leaves space above for icon */
   }
 
   .timeline-icon {
-    left: 20px;
-    transform: translateY(-50%);
+    position: absolute;
+    left: 30px; /* Align with vertical line */
+    top: 0;
+    transform: translate(-50%, 0);
+    z-index: 2;
   }
 
-  .text-box {
-  width: calc(100% - 40px); /* Gives padding room */
-  margin-left: 40px;
-  margin-right: 20px;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  text-align: left !important;
+  .timeline-block .text-box {
+    width: calc(100% - 60px);
+    margin-left: 60px;
+    padding: 20px 25px;
+    box-sizing: border-box;
+    text-align: left;
+  }
 }
-}
+
 
 
 
