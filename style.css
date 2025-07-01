@@ -312,14 +312,6 @@ body {
   margin: 0 auto 40px;
 }
 
-
-.horoscope-subtext {
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 50px;
-  line-height: 1.6;
-}
-
 #horoscope-description.horoscope-heading {
   font-size: 26px;
   font-weight: 600;
@@ -374,6 +366,14 @@ body {
 
 /* LATEST HOROSCOPE SECTION */
 
+.horoscope-heading h2{
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #4d014d;
+  margin: 0 auto 40px;
+}
+
 .horoscope-result {
   background-color: #FFFFFF;
   padding: 60px 20px;
@@ -395,7 +395,9 @@ body {
   font-size: 16px;
   color: #666;
   margin-bottom: 50px;
+  line-height: 1.6;
 }
+
 
 .result-box {
   height: 250px; /* Fixed height */
@@ -501,9 +503,9 @@ body {
 .horoscope-subtext {
   font-size: 26px;
   font-weight: 600;
-  color: #5a004f;
-  margin-bottom: 70px;
-  text-align: center;
+  line-height: 1.5;
+  color: #4d014d;
+  margin: 0 auto 40px;
 }
 
 
