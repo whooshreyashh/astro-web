@@ -90,3 +90,28 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.1 });
 
 textBoxes.forEach(box => observer.observe(box));
+
+
+
+
+
+
+
+
+// NAVBAR SCROLL HIDE
+let lastScrollTop = 0;
+const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", function () {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollTop > lastScrollTop) {
+    // Scrolling down – hide navbar
+    navbar.style.top = "-100px"; // Adjust if your header height is different
+  } else {
+    // Scrolling up – show navbar
+    navbar.style.top = "0";
+  }
+
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+});
