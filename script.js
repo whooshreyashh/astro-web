@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
   
 
   fetch("https://script.google.com/macros/s/AKfycbxNpJHaoj5dSWG-bsmGxyzvX0wTNZ3BxRKfbMEQOImVVW5OQ-yXfIzMqtL-XbIFZVdL/exec")
