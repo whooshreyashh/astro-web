@@ -163,133 +163,93 @@ body {
 
 
 
-/* Star container */
-/* .star-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 0;
-  pointer-events: none;
-  overflow: hidden;
-}
-
-/* Tiny falling stars */
-.star {
-  position: absolute;
-  top: 0;
-  width: 10px;
-  height: 10px;
-  background: linear-gradient(45deg, #FFD194, #FFB347);
-  border-radius: 50%;
-  opacity: 1;
-  z-index: 1;
-  pointer-events: none;
-
-   /* Glowing long trail */
-  box-shadow:
-    0 0 8px #FFE8A3,
-    0 0 16px #FFB347,
-    -40px 40px 30px rgba(255, 165, 0, 0.4); /* longer tail */
-
-  animation-name: shoot;
-  animation-timing-function: linear;
-} */
 
 
 
-/* Position & delay stars uniquely
-.star:nth-child(1) { top: 0; right: 10%; animation-delay: 0s; }
-.star:nth-child(2) { top: -10%; right: 20%; animation-delay: 0.3s; }
-.star:nth-child(3) { top: -20%; right: 30%; animation-delay: 0.6s; }
-.star:nth-child(4) { top: -30%; right: 40%; animation-delay: 0.9s; }
-.star:nth-child(5) { top: -40%; right: 50%; animation-delay: 1.2s; }
-.star:nth-child(6) { top: -50%; right: 60%; animation-delay: 1.5s; }
-.star:nth-child(7) { top: -60%; right: 70%; animation-delay: 1.8s; }
-.star:nth-child(8) { top: -30%; right: 80%; animation-delay: 2.1s; }
-.star:nth-child(9) { top: -20%; right: 90%; animation-delay: 2.4s; }
-.star:nth-child(10) { top: -10%; right: 100%; animation-delay: 2.7s; } */
-
-/* Shooting + fading */
-/* @keyframes shoot {
-  0% {
-    transform: translate(0, 0) scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: translate(-150vw, 150vh) scale(0.5);
-    opacity: 0;
-  }
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-/* === SERVICES SECTION === */
+/* === OUR SERVICES SECTION === */
 .services {
-  background-color: #F9F3E7;
+  background-color: #fff5e1;
   padding: 80px 20px;
+  text-align: center;
 }
 
 .services-container {
   max-width: 1200px;
-  margin: auto;
-  text-align: center;
+  margin: 0 auto;
 }
 
-.section-title {
-  font-size: 32px;
-  color: #FF7A00;
-  text-align: center;
-  margin-bottom: 40px;
+/* Reused Heading Styles */
+.horoscope-label {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: #ff6600;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
-.service-cards {
+.horoscope-heading {
+  font-size: 2rem;
+  color: #333;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+/* Card Grid */
+.services-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  margin-top: 50px;
 }
 
-.card {
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 30px;
-  width: 300px;
+/* Individual Card */
+.service-card {
+  background-color: #fff5e6;
+  padding: 25px 20px;
+  border-radius: 14px;
+  width: 260px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(255, 122, 0, 0.2);
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
-.card img {
+.service-card img {
   width: 60px;
   height: 60px;
-  margin-bottom: 20px;
+  object-fit: contain;
+  margin-bottom: 15px;
 }
 
-.card h3 {
-  color: #333;
+.service-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ff6600;
   margin-bottom: 10px;
 }
 
-.card p {
-  color: #666;
-  font-size: 15px;
-  line-height: 1.5;
+.service-card p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .horoscope-heading {
+    font-size: 1.6rem;
+  }
 }
 
 
