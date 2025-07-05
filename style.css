@@ -397,9 +397,9 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(255, 170, 75, 0.2);
   box-sizing: border-box;
-  text-align: center;       /* 👈 Horizontally center text */
+  text-align: center;       
   line-height: 1.6;
-  white-space: pre-wrap;    /* Preserve line breaks */
+  white-space: pre-wrap;   
 }
 
 .meta-text {
@@ -452,6 +452,22 @@ body {
   color: #ff7e00;
   cursor: pointer;
 }
+
+.note-text {
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #444;
+}
+
+.note-text a.contact-link {
+  color: #ff6600;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+
+
 
 
 
@@ -969,7 +985,7 @@ body::-webkit-scrollbar {
   .hero-text h2,
   .section-title,
   .horoscope-heading {
-    font-size: 22px;
+    font-size: 32px;
   }
 
   .btn {
